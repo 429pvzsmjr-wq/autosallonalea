@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Sallon ALEA Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#0b0b0b;color:#fff;line-height:1.6}
+header{position:sticky;top:0;background:#111;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}
+.logo{font-size:30px;font-weight:700;color:#d4af37}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+.hero{height:85vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:60px;color:#d4af37}
+.hero p{max-width:700px;margin:15px auto}
+.btn{display:inline-block;padding:14px 28px;background:#d4af37;color:#000;text-decoration:none;border-radius:40px;font-weight:700;margin:8px}
+section{padding:70px 5%}
+.title{text-align:center;margin-bottom:35px}
+.title h2{color:#d4af37;font-size:38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#161616;border-radius:16px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-content{padding:18px}
+.price{color:#d4af37;font-size:24px;font-weight:700}
+.features{color:#bbb;margin:10px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.stat{background:#161616;padding:25px;border-radius:15px;text-align:center}
+.review,.contact-box{background:#161616;padding:25px;border-radius:15px}
+.reviews{display:grid;gap:20px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:none;border-radius:8px}
+button{padding:14px;background:#d4af37;border:none;border-radius:8px;font-weight:bold;width:100%}
+footer{background:#000;padding:30px;text-align:center}
+@media(max-width:768px){.hero h1{font-size:40px}.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AUTO SALLON ALEA</div>
+<nav>
+<a href="#cars">Makinat</a>
+<a href="#about">Rreth Nesh</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Kontakt</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Automjete Premium për Çdo Klient</h1>
+<p>Auto Sallon ALEA ofron automjete të kontrolluara profesionalisht, çmime konkurruese dhe shërbim të besueshëm. Qëllimi ynë është të ndihmojmë çdo klient të gjejë automjetin ideal.</p>
+<a href="#cars" class="btn">Shiko Inventarin</a>
+<a href="tel:+38344838848" class="btn">Thirr Tani</a>
+</div>
+</section>
+
+<section id="about">
+<div class="title"><h2>Pse të Na Zgjidhni?</h2></div>
+<div class="stats">
+<div class="stat"><h3>500+</h3><p>Klientë të kënaqur</p></div>
+<div class="stat"><h3>100+</h3><p>Automjete në dispozicion</p></div>
+<div class="stat"><h3>10+</h3><p>Vite përvojë</p></div>
+<div class="stat"><h3>24/7</h3><p>Mbështetje për klientët</p></div>
+</div>
+</section>
+
+<section id="cars">
+<div class="title"><h2>Automjetet Kryesore</h2></div>
+<div class="grid">
+
+<div class="card"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>BMW X5</h3><div class="price">€39,900</div><div class="features">2021 • Diesel • Automatik • 85,000 km</div></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>Mercedes C220</h3><div class="price">€24,500</div><div class="features">2020 • Diesel • Automatik</div></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>Audi A6</h3><div class="price">€31,900</div><div class="features">2021 • Diesel • Automatik</div></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>VW Golf 8</h3><div class="price">€18,900</div><div class="features">2022 • Benzinë • Manual</div></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>Range Rover Sport</h3><div class="price">€52,000</div><div class="features">2022 • Diesel • Automatik</div></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"><div class="card-content"><h3>Mercedes GLE</h3><div class="price">€48,500</div><div class="features">2021 • Diesel • Automatik</div></div></div>
+
+</div>
+</section>
+
+<section id="reviews">
+<div class="title"><h2>Çfarë Thonë Klientët</h2></div>
+<div class="reviews">
+<div class="review">⭐⭐⭐⭐⭐ Shërbim profesional dhe korrekt. Makina ishte në gjendje perfekte.</div>
+<div class="review">⭐⭐⭐⭐⭐ Staf i sjellshëm dhe proces shumë i shpejtë i blerjes.</div>
+<div class="review">⭐⭐⭐⭐⭐ Çmime të mira dhe automjete cilësore.</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="title"><h2>Rezervo një Termin</h2></div>
+<div class="contact-grid">
+<div class="contact-box">
+<h3>Informacioni i Kontaktit</h3>
+<p>📍 Magjistralja Prishtinë–Mitrovicë–Mazgit, Obiliq</p>
+<p>📞 +383 44 838 848</p>
+<p>🕒 09:00 – 19:00</p>
+</div>
+<div class="contact-box">
+<input placeholder="Emri">
+<input placeholder="Numri i telefonit">
+<input placeholder="Email">
+<textarea rows="5" placeholder="Mesazhi"></textarea>
+<button>Rezervo Takimin</button>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Auto Sallon ALEA • Website Premium
+</footer>
+
+</body>
+</html>
